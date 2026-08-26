@@ -1,0 +1,3152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vimana International Tours & Travels | Bangalore</title>
+
+<meta name="description"
+content="Vimana International Tours & Travels - Domestic and International holiday packages from Bangalore.">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --blue: #073b66;
+    --darkblue: #03263f;
+    --blue2: #0b5a91;
+    --orange: #f7941d;
+    --green: #20b15a;
+    --light: #f1f5f8;
+    --white: #fff;
+    --grey: #666;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+    background: #062d4d;
+    color: #fff;
+    padding: 9px 5%;
+    font-size: 13px;
+}
+
+.topbar-inner {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,.1);
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 14px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--blue);
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.call-btn,
+.whatsapp-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.call-btn {
+    background: var(--blue);
+}
+
+.whatsapp-btn {
+    background: var(--green);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 570px;
+
+    background:
+        linear-gradient(
+            rgba(0,30,55,.60),
+            rgba(0,30,55,.60)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 950px;
+    width: 90%;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.primary {
+    background: var(--orange);
+    color: #fff;
+}
+
+.secondary {
+    background: #fff;
+    color: var(--blue);
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    max-width: 1100px;
+    margin: -45px auto 50px;
+    position: relative;
+    z-index: 10;
+
+    background: #fff;
+    padding: 25px;
+    border-radius: 9px;
+
+    box-shadow: 0 6px 30px rgba(0,0,0,.16);
+}
+
+.search-title {
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 12px;
+}
+
+.search-field {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+    border-radius: 5px;
+}
+
+.search-field label {
+    display: block;
+    color: #888;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-field select,
+.search-field input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.search-btn {
+    border: 0;
+    border-radius: 5px;
+    padding: 0 25px;
+    background: var(--orange);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.section {
+    padding: 75px 0;
+}
+
+.section-heading,
+.section-title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.section-title small {
+    color: var(--orange);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2,
+.section-title h2 {
+    color: var(--blue);
+    font-size: 36px;
+    margin: 8px 0 10px;
+}
+
+.section-heading p,
+.section-title p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* =========================
+   DESTINATION GRID
+========================= */
+
+.destination-grid,
+.international-grid {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.destination-card {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ddd;
+
+    transition: .3s;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,.12);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.destination-card:hover img {
+    transform: scale(1.08);
+}
+
+.destination-card:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,.2);
+}
+
+.destination-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        transparent 25%,
+        rgba(0,0,0,.78) 100%
+    );
+
+    color: white;
+}
+
+.destination-info {
+    width: 100%;
+}
+
+.destination-info h3 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.destination-info p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #eee;
+    margin-bottom: 12px;
+}
+
+.explore {
+    display: inline-block;
+    color: #fff;
+    background: var(--orange);
+
+    padding: 8px 13px;
+    border-radius: 4px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* =========================
+   DOMESTIC
+========================= */
+
+#domestic {
+    background: #fff;
+}
+
+/* =========================
+   INTERNATIONAL
+========================= */
+
+.international {
+    background: #f1f5f8;
+}
+
+/* =========================
+   WHY VIMANA
+========================= */
+
+.why {
+    background: var(--blue);
+    color: #fff;
+}
+
+.why .section-title h2 {
+    color: #fff;
+}
+
+.why .section-title p {
+    color: #cbd9e3;
+}
+
+.features {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    padding: 30px 20px;
+
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 8px;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 14px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #cbd9e3;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    background: #fff;
+}
+
+.services-grid {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.service {
+    padding: 30px;
+
+    background: #f7f9fb;
+
+    border: 1px solid #e2e7eb;
+    border-radius: 8px;
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.service h3 {
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+.service p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================
+   HONEYMOON
+========================= */
+
+.honeymoon {
+    background:
+        linear-gradient(
+            rgba(70,20,45,.70),
+            rgba(70,20,45,.70)
+        ),
+        url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: #fff;
+
+    padding: 100px 20px;
+}
+
+.honeymoon h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.honeymoon h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.honeymoon p {
+    max-width: 750px;
+    margin: 10px auto;
+
+    line-height: 1.8;
+    color: #f3e9ee;
+}
+
+.honeymoon-btn {
+    display: inline-block;
+    margin-top: 25px;
+
+    background: var(--orange);
+    color: #fff;
+
+    padding: 14px 28px;
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    background: #f7f8fa;
+}
+
+.testimonial-grid {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.testimonial p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.testimonial strong {
+    color: var(--blue);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background:
+        linear-gradient(
+            rgba(3,40,68,.88),
+            rgba(3,40,68,.88)
+        ),
+        url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: #fff;
+
+    padding: 90px 20px;
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: #d8e3e8;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: #f1f5f8;
+}
+
+.contact-grid {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-info {
+    background: var(--blue);
+    color: #fff;
+
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contact-info h2 {
+    font-size: 31px;
+    margin-bottom: 12px;
+}
+
+.contact-info > p {
+    color: #d4e0e7;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin: 20px 0;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item a:hover {
+    color: #ffb347;
+}
+
+.enquiry-form {
+    background: #fff;
+    padding: 35px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+}
+
+.enquiry-form h3 {
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    width: 100%;
+
+    padding: 13px;
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enquiry-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 0;
+    border-radius: 4px;
+
+    background: var(--green);
+    color: #fff;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #031d31;
+    color: #b7c8d3;
+
+    padding: 45px 20px 25px;
+}
+
+.footer-grid {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-title {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+footer p {
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    display: block;
+    margin: 8px 0;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+/* =========================
+   FLOATING BUTTONS
+========================= */
+
+.floating {
+    position: fixed;
+
+    right: 18px;
+    bottom: 18px;
+
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.float {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 25px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+}
+
+.float.call {
+    background: var(--blue);
+}
+
+.float.whatsapp {
+    background: #25d366;
+}
+
+.enquire {
+    position: fixed;
+
+    left: 18px;
+    bottom: 18px;
+
+    z-index: 2000;
+
+    background: var(--orange);
+    color: #fff;
+
+    padding: 13px 20px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+    font-size: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .search-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destination-grid,
+    .international-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .nav-container {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .call-btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .search-box {
+        margin: -30px 15px 30px;
+        padding: 18px;
+    }
+
+    .search-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-btn {
+        padding: 14px;
+    }
+
+    .destination-grid,
+    .international-grid,
+    .features,
+    .services-grid,
+    .testimonial-grid,
+    .contact-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card {
+        height: 280px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-heading h2,
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .honeymoon h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .contact-info,
+    .enquiry-form {
+        padding: 25px;
+    }
+
+    .enquire {
+        bottom: 15px;
+        left: 15px;
+        padding: 11px 15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="topbar">
+
+    <div class="topbar-inner">
+
+        <div>
+            Welcome to Vimana International Tours & Travels
+        </div>
+
+        <div class="topbar-right">
+
+            <a href="tel:+919710933954">
+                📞 9710933954
+            </a>
+
+            <a href="mailto:vimanainternational@gmail.com">
+                ✉ vimanainternational@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            VIMANA<span>✈</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#domestic">
+                Domestic
+            </a>
+
+            <a href="#international">
+                International
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#about">
+                Why Vimana
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <a
+                class="call-btn"
+                href="tel:+919710933954">
+                📞 Call
+            </a>
+
+            <a
+                class="whatsapp-btn"
+                href="https://wa.me/919710933954?text=Hello%20Vimana%2C%20I%20want%20to%20plan%20a%20trip"
+                target="_blank">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Explore the World<br>
+            With Vimana
+        </h1>
+
+        <p>
+            Discover unforgettable destinations, amazing holidays
+            and personalised travel experiences.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#domestic"
+                class="hero-btn primary">
+                Explore Domestic
+            </a>
+
+            <a
+                href="#international"
+                class="hero-btn secondary">
+                Explore International
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-box">
+
+    <div class="search-title">
+        🔎 Find Your Perfect Holiday
+    </div>
+
+    <div class="search-grid">
+
+        <div class="search-field">
+
+            <label>DESTINATION</label>
+
+            <select id="searchDestination">
+
+                <option value="all">
+                    All Destinations
+                </option>
+
+                <option value="kashmir">
+                    Kashmir
+                </option>
+
+                <option value="manali">
+                    Manali
+                </option>
+
+                <option value="kerala">
+                    Kerala
+                </option>
+
+                <option value="goa">
+                    Goa
+                </option>
+
+                <option value="coorg">
+                    Coorg
+                </option>
+
+                <option value="ooty">
+                    Ooty
+                </option>
+
+                <option value="kodaikanal">
+                    Kodaikanal
+                </option>
+
+                <option value="meghalaya">
+                    Meghalaya
+                </option>
+
+                <option value="andaman">
+                    Andaman
+                </option>
+
+                <option value="ladakh">
+                    Ladakh
+                </option>
+
+                <option value="dubai">
+                    Dubai
+                </option>
+
+                <option value="bali">
+                    Bali
+                </option>
+
+                <option value="vietnam">
+                    Vietnam
+                </option>
+
+                <option value="thailand">
+                    Thailand
+                </option>
+
+                <option value="europe">
+                    Europe
+                </option>
+
+                <option value="turkey">
+                    Turkey
+                </option>
+
+                <option value="singapore">
+                    Singapore
+                </option>
+
+                <option value="malaysia">
+                    Malaysia
+                </option>
+
+                <option value="australia">
+                    Australia
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+            <label>TRAVEL TYPE</label>
+
+            <select id="travelType">
+
+                <option>
+                    Holiday Packages
+                </option>
+
+                <option>
+                    Family Holidays
+                </option>
+
+                <option>
+                    Honeymoon
+                </option>
+
+                <option>
+                    Adventure
+                </option>
+
+                <option>
+                    Group Tours
+                </option>
+
+                <option>
+                    Temple Tours
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+            <label>TRAVELLERS</label>
+
+            <input
+                id="travellers"
+                type="number"
+                min="1"
+                placeholder="Number of travellers">
+
+        </div>
+
+
+        <button
+            class="search-btn"
+            onclick="searchPackages()">
+
+            SEARCH
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     DOMESTIC DESTINATIONS
+========================================================= -->
+
+<section
+    class="section"
+    id="domestic">
+
+    <div class="section-title">
+
+        <small>
+            INDIA
+        </small>
+
+        <h2>
+            Explore India
+        </h2>
+
+        <p>
+            From tropical beaches and peaceful backwaters
+            to majestic mountains and spiritual destinations.
+        </p>
+
+    </div>
+
+
+    <div class="destination-grid">
+
+
+        <!-- GOA -->
+
+        <div
+            class="destination-card"
+            id="goa">
+
+            <img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=90"
+                alt="Goa">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Goa
+                    </h3>
+
+                    <p>
+                        Beaches, sunsets, Portuguese heritage and vibrant coastal life.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE GOA →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COORG -->
+
+        <div
+            class="destination-card"
+            id="coorg">
+
+            <img
+                src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1000&q=90"
+                alt="Coorg">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Coorg / Mysore
+                    </h3>
+
+                    <p>
+                        Misty hills, coffee plantations and beautiful nature.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE COORG →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KERALA -->
+
+        <div
+            class="destination-card"
+            id="kerala">
+
+            <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=90"
+                alt="Kerala">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Munnar / Alleppey
+                    </h3>
+
+                    <p>
+                        Tea plantations, backwaters and tropical Kerala.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE KERALA →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- OOTY -->
+
+        <div
+            class="destination-card"
+            id="ooty">
+
+            <img
+                src="https://www.clubmahindra.com/blog/media/section_images/ultimate-o-8ac88a2da056a3d.jpg"
+                alt="Ooty">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Ooty
+                    </h3>
+
+                    <p>
+                        Misty mountains, tea gardens and peaceful escapes.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE OOTY →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KODAIKANAL -->
+
+        <div
+            class="destination-card"
+            id="kodaikanal">
+
+            <img
+                src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1000&q=90"
+                alt="Kodaikanal">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Kodaikanal
+                    </h3>
+
+                    <p>
+                        A beautiful hill station surrounded by forests and lakes.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE KODAIKANAL →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAHABALIPURAM -->
+
+        <div
+            class="destination-card"
+            id="mahabalipuram">
+
+            <img
+                src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1000&q=90"
+                alt="Mahabalipuram">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Mahabalipuram
+                    </h3>
+
+                    <p>
+                        Ancient temples, stone carvings and coastal beauty.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PONDICHERRY -->
+
+        <div
+            class="destination-card"
+            id="pondicherry">
+
+            <img
+                
+                src="https://www.onthegotours.com/repository/Pondicherry-847131716907207.jpg"
+                alt="Pondicherry">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Pondicherry
+                    </h3>
+
+                    <p>
+                        White Town, French architecture, lighthouse and relaxed coastal vibes.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TIRUPATI -->
+
+        <div
+            class="destination-card"
+            id="tirupati">
+
+            <img
+                
+                src="https://cf-img-a-in.tosshub.com/sites/visualstory/stories/2022_11/story_13092/assets/1.jpeg?time=1668426967"
+                alt="Tirumala Tirupati Venkateshwara Temple">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Tirumala & Tirupati
+                    </h3>
+
+                    <p>
+                        A spiritual journey to one of India's most revered temples.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TAMIL NADU TEMPLE -->
+
+        <div
+            class="destination-card"
+            id="tamilnadu">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Somanathaswamy%20temple%2C%20Melpadi%20%284%29.jpg?width=1200"
+                alt="Somanathaswamy Temple Melpadi Tamil Nadu">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Temple Tours – Tamil Nadu
+                    </h3>
+
+                    <p>
+                        Discover magnificent temples, ancient architecture, heritage and culture.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEGHALAYA -->
+
+        <div
+            class="destination-card"
+            id="meghalaya">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Nohkalikai%20falls%2C%20Meghalaya.jpg?width=1200"
+                alt="Nohkalikai Falls Meghalaya">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Meghalaya
+                    </h3>
+
+                    <p>
+                        Nohkalikai Falls, clouds, caves and lush green landscapes.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DARJEELING -->
+
+        <div
+            class="destination-card"
+            id="darjeeling">
+
+            <img
+                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=90"
+                alt="Darjeeling">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Darjeeling
+                    </h3>
+
+                    <p>
+                        Tea gardens, Himalayan views and charming mountain towns.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ANDAMAN -->
+
+        <div
+            class="destination-card"
+            id="andaman">
+
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=90"
+                alt="Andaman Islands">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Andaman Islands
+                    </h3>
+
+                    <p>
+                        Turquoise waters, beaches and unforgettable island adventures.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LAKSHADWEEP -->
+
+        <div
+            class="destination-card"
+            id="lakshadweep">
+
+            <img
+                src="https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1000&q=90"
+                alt="Lakshadweep Islands">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Lakshadweep Islands
+                    </h3>
+
+                    <p>
+                        Pristine lagoons, coral islands and peaceful beaches.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHIMLA KULLU MANALI -->
+
+        <div
+            class="destination-card"
+            id="manali">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Solang%20Valley%20Manali.JPG?width=1200"
+                alt="Solang Valley Manali">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Shimla & Kullu Manali
+                    </h3>
+
+                    <p>
+                        Snowy mountains, Solang Valley, adventure and unforgettable Himalayan experiences.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- UTTARAKHAND -->
+
+        <div
+            class="destination-card"
+            id="uttarakhand">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Kedarnath%20temple%20in%20uttarakhand.jpg?width=1200"
+                alt="Kedarnath Temple Uttarakhand">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Uttarakhand
+                    </h3>
+
+                    <p>
+                        Kedarnath Temple, Himalayan landscapes, valleys and spiritual journeys.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GOLDEN TRIANGLE -->
+
+        <div
+            class="destination-card"
+            id="delhi">
+
+            <img
+                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1000&q=90"
+                alt="Delhi Agra Jaipur">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Delhi – Agra – Jaipur
+                    </h3>
+
+                    <p>
+                        Experience India's iconic Golden Triangle.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KASHMIR -->
+
+        <div
+            class="destination-card"
+            id="kashmir">
+
+            <img
+                src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1000&q=90"
+                alt="Kashmir">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Kashmir
+                    </h3>
+
+                    <p>
+                        Paradise of mountains, lakes, valleys and gardens.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LADAKH -->
+
+        <div
+            class="destination-card"
+            id="ladakh">
+
+            <img
+                src="https://grandholidayparkvacation.com/uploads/62208357b184e_1646297943.jpg"
+                alt="Ladakh Bike Tour">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Ladakh
+                    </h3>
+
+                    <p>
+                        High-altitude landscapes and spectacular Himalayan roads.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTERNATIONAL
+========================================================= -->
+
+<section
+    class="section international"
+    id="international">
+
+    <div class="section-title">
+
+        <small>
+            INTERNATIONAL
+        </small>
+
+        <h2>
+            Discover The World
+        </h2>
+
+        <p>
+            Explore unforgettable international destinations
+            with Vimana Tours & Travels.
+        </p>
+
+    </div>
+
+
+    <div class="international-grid">
+
+
+        <!-- DUBAI -->
+
+        <div
+            class="destination-card"
+            id="dubai">
+
+            <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=90"
+                alt="Dubai">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Dubai
+                    </h3>
+
+                    <p>
+                        Luxury, shopping, desert adventures and iconic skyscrapers.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BALI -->
+
+        <div
+            class="destination-card"
+            id="bali">
+
+            <img
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=90"
+                alt="Bali">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Bali
+                    </h3>
+
+                    <p>
+                        Tropical beaches, temples and beautiful rice terraces.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- VIETNAM -->
+
+        <div
+            class="destination-card"
+            id="vietnam">
+
+            <img
+                src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=90"
+                alt="Vietnam">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Vietnam
+                    </h3>
+
+                    <p>
+                        Beautiful landscapes, culture and incredible food.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- THAILAND -->
+
+        <div
+            class="destination-card"
+            id="thailand">
+
+            <img
+                src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1000&q=90"
+                alt="Thailand">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Thailand
+                    </h3>
+
+                    <p>
+                        Tropical islands, temples and vibrant city life.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- EUROPE -->
+
+        <div
+            class="destination-card"
+            id="europe">
+
+            <img
+                src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1000&q=90"
+                alt="Europe">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Europe
+                    </h3>
+
+                    <p>
+                        Iconic cities, history and breathtaking scenery.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TURKEY -->
+
+        <div
+            class="destination-card"
+            id="turkey">
+
+            <img
+                src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=90"
+                alt="Turkey">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Turkey
+                    </h3>
+
+                    <p>
+                        Istanbul, Cappadocia and ancient wonders.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SINGAPORE -->
+
+        <div
+            class="destination-card"
+            id="singapore">
+
+            <img
+                src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=90"
+                alt="Singapore">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Singapore
+                    </h3>
+
+                    <p>
+                        Modern attractions, gardens and world-class experiences.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MALAYSIA -->
+
+        <div
+            class="destination-card"
+            id="malaysia">
+
+            <img
+                src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1000&q=90"
+                alt="Malaysia">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Malaysia
+                    </h3>
+
+                    <p>
+                        Rainforests, islands, cities and diverse cultures.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- AUSTRALIA -->
+
+        <div
+            class="destination-card"
+            id="australia">
+
+            <img
+                src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1000&q=90"
+                alt="Australia">
+
+            <div class="destination-overlay">
+
+                <div class="destination-info">
+
+                    <h3>
+                        Australia
+                    </h3>
+
+                    <p>
+                        Beaches, wildlife, cities and unforgettable adventures.
+                    </p>
+
+                    <a href="#contact" class="explore">
+                        EXPLORE →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section
+    class="section services"
+    id="services">
+
+    <div class="section-title">
+
+        <small>
+            OUR SERVICES
+        </small>
+
+        <h2>
+            Everything You Need For Your Journey
+        </h2>
+
+        <p>
+            From planning to your return journey,
+            Vimana takes care of the important details.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <div class="service">
+
+            <div class="service-icon">
+                ✈️
+            </div>
+
+            <h3>
+                Flight Booking
+            </h3>
+
+            <p>
+                Domestic and international flight booking assistance.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-icon">
+                🏨
+            </div>
+
+            <h3>
+                Hotel Booking
+            </h3>
+
+            <p>
+                Comfortable stays selected according to your budget.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-icon">
+                🚕
+            </div>
+
+            <h3>
+                Transfers
+            </h3>
+
+            <p>
+                Airport transfers and local transportation arrangements.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-icon">
+                🗺️
+            </div>
+
+            <h3>
+                Tour Packages
+            </h3>
+
+            <p>
+                Complete holiday packages designed around your plans.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-icon">
+                💑
+            </div>
+
+            <h3>
+                Honeymoon Trips
+            </h3>
+
+            <p>
+                Romantic getaways specially planned for couples.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <div class="service-icon">
+                🛕
+            </div>
+
+            <h3>
+                Pilgrimage Tours
+            </h3>
+
+            <p>
+                Spiritual and temple tours across popular destinations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HONEYMOON ================= -->
+
+<section
+    class="honeymoon"
+    id="honeymoon">
+
+    <h2>
+        💖 Romantic Escapes
+    </h2>
+
+    <h3>
+        Plan Your Perfect Honeymoon
+    </h3>
+
+    <p>
+        From peaceful beaches to beautiful mountains,
+        let Vimana create a memorable honeymoon designed especially for you.
+    </p>
+
+    <a
+        href="#contact"
+        class="honeymoon-btn">
+        PLAN MY HONEYMOON →
+    </a>
+
+</section>
+
+
+<!-- ================= WHY VIMANA ================= -->
+
+<section
+    class="section why"
+    id="about">
+
+    <div class="section-title">
+
+        <small>
+            WHY VIMANA
+        </small>
+
+        <h2>
+            Travel With Confidence
+        </h2>
+
+        <p>
+            We take care of the details so you can enjoy the journey.
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ✈️
+            </div>
+
+            <h3>
+                Complete Packages
+            </h3>
+
+            <p>
+                Flights, hotels, transfers and sightseeing arranged for you.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <h3>
+                Best Value
+            </h3>
+
+            <p>
+                Travel packages designed around your budget and requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🤝
+            </div>
+
+            <h3>
+                Personal Support
+            </h3>
+
+            <p>
+                Dedicated assistance before and during your journey.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🌎
+            </div>
+
+            <h3>
+                Worldwide Travel
+            </h3>
+
+            <p>
+                Domestic and international destinations under one roof.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section
+    class="section testimonials">
+
+    <div class="section-title">
+
+        <small>
+            TRAVELLER STORIES
+        </small>
+
+        <h2>
+            What Our Travellers Say
+        </h2>
+
+        <p>
+            Memorable journeys begin with great planning.
+        </p>
+
+    </div>
+
+
+    <div class="testimonial-grid">
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Our Kerala trip was beautifully organised.
+                Everything was smooth and comfortable."
+            </p>
+
+            <strong>
+                — Happy Traveller
+            </strong>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The team helped us plan our family holiday
+                according to our budget. Highly recommended."
+            </p>
+
+            <strong>
+                — Family Traveller
+            </strong>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Our honeymoon trip was memorable from start to finish.
+                Thank you Vimana!"
+            </p>
+
+            <strong>
+                — Honeymoon Couple
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>
+        Plan Your Dream Journey
+    </h2>
+
+    <p>
+        Tell us where you want to go and our travel experts
+        will help you create the perfect trip.
+    </p>
+
+
+    <div class="cta-buttons">
+
+        <a
+            href="https://wa.me/919710933954?text=Hello%20Vimana%2C%20I%20want%20to%20plan%20a%20trip"
+            target="_blank"
+            class="hero-btn primary">
+
+            💬 WHATSAPP US
+
+        </a>
+
+
+        <a
+            href="tel:+919710933954"
+            class="hero-btn secondary">
+
+            📞 CALL US
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+    class="section contact"
+    id="contact">
+
+    <div class="contact-grid">
+
+
+        <div class="contact-info">
+
+            <h2>
+                Let's Plan Your Trip
+            </h2>
+
+            <p>
+                Share your travel requirements with us.
+                Our team will get in touch with you.
+            </p>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    📞 Phone
+                </strong>
+
+                <a href="tel:+919710933954">
+                    +91 97109 33954
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    💬 WhatsApp
+                </strong>
+
+                <a
+                    href="https://wa.me/919710933954"
+                    target="_blank">
+
+                    Chat with Vimana
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    ✉️ Email
+                </strong>
+
+                <a
+                    href="mailto:vimanainternational@gmail.com">
+
+                    vimanainternational@gmail.com
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    📍 Location
+                </strong>
+
+                Bangalore, Karnataka, India
+
+            </div>
+
+        </div>
+
+
+        <!-- ENQUIRY FORM -->
+
+        <form
+            class="enquiry-form"
+            onsubmit="sendEnquiry(event)">
+
+            <h3>
+                Send An Enquiry
+            </h3>
+
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Your Name"
+                required>
+
+
+            <input
+                id="phone"
+                type="tel"
+                placeholder="Phone Number"
+                required>
+
+
+            <input
+                id="email"
+                type="email"
+                placeholder="Email Address">
+
+
+            <select
+                id="destination"
+                required>
+
+                <option value="">
+                    Select Destination
+                </option>
+
+                <option>Goa</option>
+                <option>Coorg</option>
+                <option>Kerala</option>
+                <option>Ooty</option>
+                <option>Kodaikanal</option>
+                <option>Mahabalipuram</option>
+                <option>Pondicherry</option>
+                <option>Tirumala & Tirupati</option>
+                <option>Temple Tours – Tamil Nadu</option>
+                <option>Meghalaya</option>
+                <option>Darjeeling</option>
+                <option>Andaman Islands</option>
+                <option>Lakshadweep Islands</option>
+                <option>Shimla & Kullu Manali</option>
+                <option>Uttarakhand</option>
+                <option>Delhi – Agra – Jaipur</option>
+                <option>Kashmir</option>
+                <option>Ladakh</option>
+
+                <option>Dubai</option>
+                <option>Bali</option>
+                <option>Vietnam</option>
+                <option>Thailand</option>
+                <option>Europe</option>
+                <option>Turkey</option>
+                <option>Singapore</option>
+                <option>Malaysia</option>
+                <option>Australia</option>
+
+            </select>
+
+
+            <input
+                id="travelDate"
+                type="date">
+
+
+            <input
+                id="travellerCount"
+                type="number"
+                min="1"
+                placeholder="Number of Travellers">
+
+
+            <textarea
+                id="message"
+                placeholder="Tell us about your trip..."></textarea>
+
+
+            <button
+                class="submit-btn"
+                type="submit">
+
+                SEND ENQUIRY ON WHATSAPP
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <div class="footer-brand">
+                VIMANA ✈
+            </div>
+
+            <p>
+                Creating unforgettable journeys across India
+                and around the world.
+            </p>
+
+            <p>
+                Bangalore, Karnataka, India
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="footer-title">
+                DESTINATIONS
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#domestic">
+                    Domestic Tours
+                </a>
+
+                <a href="#international">
+                    International Tours
+                </a>
+
+                <a href="#honeymoon">
+                    Honeymoon
+                </a>
+
+                <a href="#services">
+                    Travel Services
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <div class="footer-title">
+                CONTACT
+            </div>
+
+            <div class="footer-links">
+
+                <a href="tel:+919710933954">
+                    📞 +91 97109 33954
+                </a>
+
+                <a
+                    href="https://wa.me/919710933954"
+                    target="_blank">
+
+                    💬 WhatsApp
+
+                </a>
+
+                <a
+                    href="mailto:vimanainternational@gmail.com">
+
+                    ✉️ Email Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Vimana International Tours & Travels.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="floating">
+
+    <a
+        href="tel:+919710933954"
+        class="float call"
+        title="Call Vimana">
+
+        📞
+
+    </a>
+
+
+    <a
+        href="https://wa.me/919710933954?text=Hello%20Vimana%2C%20I%20want%20to%20plan%20a%20trip"
+        target="_blank"
+        class="float whatsapp"
+        title="WhatsApp Vimana">
+
+        💬
+
+    </a>
+
+</div>
+
+
+<a
+    href="#contact"
+    class="enquire">
+
+    ENQUIRE NOW
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchPackages() {
+
+    const destination =
+        document.getElementById("searchDestination").value;
+
+    const type =
+        document.getElementById("travelType").value;
+
+    const travellers =
+        document.getElementById("travellers").value;
+
+
+    if (destination !== "all") {
+
+        const card =
+            document.getElementById(destination);
+
+
+        if (card) {
+
+            card.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+
+            card.style.outline =
+                "4px solid #f7941d";
+
+
+            setTimeout(function () {
+
+                card.style.outline = "none";
+
+            }, 2500);
+
+
+            return;
+        }
+
+    }
+
+
+    document
+        .getElementById("contact")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+
+    setTimeout(function () {
+
+        alert(
+            "Tell us your requirements and Vimana will help plan your " +
+            type +
+            (travellers
+                ? " for " + travellers + " travellers."
+                : ".")
+        );
+
+    }, 500);
+
+}
+
+
+/* =========================
+   WHATSAPP ENQUIRY
+========================= */
+
+function sendEnquiry(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const destination =
+        document.getElementById("destination").value;
+
+    const date =
+        document.getElementById("travelDate").value;
+
+    const travellers =
+        document.getElementById("travellerCount").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const whatsappMessage =
+
+        "Hello Vimana Tours & Travels!\n\n" +
+
+        "I would like to plan a trip.\n\n" +
+
+        "Name: " +
+        name +
+        "\n" +
+
+        "Phone: " +
+        phone +
+        "\n" +
+
+        "Email: " +
+        (email || "Not provided") +
+        "\n" +
+
+        "Destination: " +
+        destination +
+        "\n" +
+
+        "Travel Date: " +
+        (date || "Not specified") +
+        "\n" +
+
+        "Travellers: " +
+        (travellers || "Not specified") +
+        "\n" +
+
+        "Message: " +
+        (message || "No additional message");
+
+
+    const whatsappURL =
+
+        "https://wa.me/919710933954?text=" +
+
+        encodeURIComponent(
+            whatsappMessage
+        );
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* =========================
+   IMAGE FALLBACK
+========================= */
+
+document
+    .querySelectorAll("img")
+    .forEach(function(img) {
+
+        img.addEventListener(
+            "error",
+            function() {
+
+                if (!this.dataset.fallback) {
+
+                    this.dataset.fallback = "true";
+
+                    this.src =
+                        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80";
+
+                }
+
+            }
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
+
