@@ -1,1 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Goa Tour Package | Vimana Tours</title>
+
+<meta name="description"
+content="Explore Goa with Vimana International Tours & Travels. Beaches, sightseeing, adventure and unforgettable coastal experiences.">
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --blue: #073b66;
+    --darkblue: #03263f;
+    --orange: #f7941d;
+    --green: #20b15a;
+    --light: #f1f5f8;
+    --white: #ffffff;
+    --grey: #666;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar {
+    background: #062d4d;
+    color: white;
+    padding: 9px 5%;
+    font-size: 13px;
+}
+
+.topbar-inner {
+    max-width: 1250px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: white;
+
+    box-shadow: 0 2px 12px rgba(0,0,0,.1);
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: auto;
+
+    padding: 14px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+
+    color: var(--blue);
+
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.call-btn,
+.whatsapp-btn {
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.call-btn {
+    background: var(--blue);
+}
+
+.whatsapp-btn {
+    background: var(--green);
+}
+
+
+/* =========================================================
+   GOA HERO
+========================================================= */
+
+.destination-hero {
+
+    min-height: 520px;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,30,55,.55),
+            rgba(0,30,55,.70)
+        ),
+
+        url("https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 80px 20px;
+}
+
+.destination-hero-content {
+    max-width: 900px;
+}
+
+.destination-hero h1 {
+
+    font-size: 60px;
+
+    font-weight: 900;
+
+    margin-bottom: 15px;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,.3);
+}
+
+.destination-hero p {
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.duration {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    background: var(--orange);
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 0 25px;
+}
+
+.section {
+    padding: 75px 0;
+}
+
+
+/* =========================================================
+   DISCOVER
+========================================================= */
+
+.discover {
+    background: white;
+}
+
+.discover-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.3fr .7fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+.section-label {
+
+    color: var(--orange);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+}
+
+.discover h2 {
+
+    color: var(--blue);
+
+    font-size: 38px;
+
+    margin: 8px 0 18px;
+}
+
+.discover p {
+
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.destination-image {
+
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.highlights {
+    background: #f1f5f8;
+}
+
+.section-title {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 40px;
+}
+
+.section-title h2 {
+
+    color: var(--blue);
+
+    font-size: 36px;
+
+    margin: 8px 0;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.highlight-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.highlight {
+
+    background: white;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+}
+
+.highlight-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 12px;
+}
+
+.highlight h3 {
+
+    color: var(--blue);
+
+    margin-bottom: 8px;
+}
+
+.highlight p {
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ITINERARY
+========================================================= */
+
+.itinerary {
+    background: white;
+}
+
+.itinerary-list {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.day {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    border-left: 5px solid var(--orange);
+
+    background: #f7f9fb;
+
+    border-radius: 5px;
+}
+
+.day-number {
+
+    color: var(--orange);
+
+    font-weight: 900;
+
+    font-size: 18px;
+}
+
+.day h3 {
+
+    color: var(--blue);
+
+    font-size: 22px;
+
+    margin-bottom: 7px;
+}
+
+.day p {
+    color: #666;
+}
+
+
+/* =========================================================
+   PACKAGE
+========================================================= */
+
+.package {
+    background: #f1f5f8;
+}
+
+.package-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.package-box {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.package-box h3 {
+
+    color: var(--blue);
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+.package-box ul {
+
+    padding-left: 20px;
+}
+
+.package-box li {
+
+    margin-bottom: 10px;
+
+    color: #555;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+
+    background:
+
+        linear-gradient(
+            rgba(3,40,68,.90),
+            rgba(3,40,68,.90)
+        ),
+
+        url("https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 90px 20px;
+}
+
+.cta h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.cta p {
+
+    color: #d8e3e8;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.cta-buttons {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.btn-orange {
+
+    background: var(--orange);
+
+    color: white;
+}
+
+.btn-green {
+
+    background: var(--green);
+
+    color: white;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #031d31;
+
+    color: #b7c8d3;
+
+    padding: 40px 20px 25px;
+
+    text-align: center;
+}
+
+.footer-brand {
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.copyright {
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK HOME
+========================================================= */
+
+.back-home {
+
+    position: fixed;
+
+    left: 20px;
+
+    bottom: 20px;
+
+    z-index: 2000;
+
+    background: var(--blue);
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+}
+
+.back-home:hover {
+    background: var(--orange);
+}
+
+
+/* =========================================================
+   FLOATING WHATSAPP
+========================================================= */
+
+.floating-whatsapp {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 55px;
+
+    height: 55px;
+
+    background: #25d366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    z-index: 2000;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .destination-hero h1 {
+        font-size: 45px;
+    }
+
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .nav-container {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .call-btn {
+        display: none;
+    }
+
+    .destination-hero {
+        min-height: 430px;
+    }
+
+    .destination-hero h1 {
+        font-size: 37px;
+    }
+
+    .destination-hero p {
+        font-size: 15px;
+    }
+
+    .discover h2 {
+        font-size: 30px;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .day {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="topbar">
+
+    <div class="topbar-inner">
+
+        <div>
+            Welcome to Vimana International Tours & Travels
+        </div>
+
+        <div class="topbar-right">
+
+            <a href="tel:+919710933954">
+                📞 9710933954
+            </a>
+
+            <a href="mailto:vimanainternational@gmail.com">
+                ✉ vimanainternational@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            VIMANA<span>✈</span>
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#domestic">
+                Domestic
+            </a>
+
+            <a href="index.html#international">
+                International
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="index.html#about">
+                Why Vimana
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="nav-buttons">
+
+            <a
+                class="call-btn"
+                href="tel:+919710933954">
+
+                📞 Call
+
+            </a>
+
+
+            <a
+                class="whatsapp-btn"
+                href="https://wa.me/919710933954?text=Hello%20Vimana%2C%20I%20want%20to%20plan%20a%20trip%20to%20Goa"
+                target="_blank">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     GOA HERO
+========================================================= -->
+
+<header class="destination-hero">
+
+    <div class="destination-hero-content">
+
+        <h1>
+            Goa Tour Package
+        </h1>
+
+        <p>
+            Beaches, adventure, nightlife and unforgettable
+            coastal experiences.
+        </p>
+
+        <div class="duration">
+            3 Nights / 4 Days
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     DISCOVER
+========================================================= -->
+
+<section class="section discover">
+
+    <div class="container">
+
+        <div class="discover-grid">
+
+            <div>
+
+                <div class="section-label">
+                    DISCOVER
+                </div>
+
+                <h2>
+                    Discover Goa
+                </h2>
+
+                <p>
+                    A carefully planned Goa experience designed
+                    to help you enjoy the best of beaches,
+                    sightseeing and coastal life.
+                </p>
+
+                <p>
+                    From the lively beaches of North Goa to the
+                    peaceful beauty of South Goa, experience
+                    unforgettable moments along India's beautiful
+                    western coast.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <img
+                    class="destination-image"
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85"
+                    alt="Goa Beach">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HIGHLIGHTS
+========================================================= -->
+
+<section class="section highlights">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-label">
+                EXPERIENCE
+            </div>
+
+            <h2>
+                Trip Highlights
+            </h2>
+
+            <p>
+                Experience the best of Goa with a carefully
+                planned holiday.
+            </p>
+
+        </div>
+
+
+        <div class="highlight-grid">
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    🏖️
+                </div>
+
+                <h3>
+                    Beautiful Beaches
+                </h3>
+
+                <p>
+                    Relax at Goa's famous beaches and enjoy
+                    stunning sunsets.
+                </p>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    🏰
+                </div>
+
+                <h3>
+                    Fort Aguada
+                </h3>
+
+                <p>
+                    Explore the historic Fort Aguada and enjoy
+                    beautiful coastal views.
+                </p>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    🌴
+                </div>
+
+                <h3>
+                    North & South Goa
+                </h3>
+
+                <p>
+                    Experience both lively North Goa and
+                    peaceful South Goa.
+                </p>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    🌅
+                </div>
+
+                <h3>
+                    Sunset Experiences
+                </h3>
+
+                <p>
+                    Enjoy unforgettable sunsets and relaxing
+                    coastal experiences.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ITINERARY
+========================================================= -->
+
+<section class="section itinerary">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-label">
+                YOUR JOURNEY
+            </div>
+
+            <h2>
+                Itinerary
+            </h2>
+
+            <p>
+                A sample itinerary that can be customised
+                according to your preferences.
+            </p>
+
+        </div>
+
+
+        <div class="itinerary-list">
+
+
+            <div class="day">
+
+                <div class="day-number">
+                    Day 1
+                </div>
+
+                <div>
+
+                    <h3>
+                        Arrival & Beach
+                    </h3>
+
+                    <p>
+                        Arrive in Goa, check in to your hotel
+                        and relax. Spend the evening enjoying
+                        the beach and beautiful sunset.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="day">
+
+                <div class="day-number">
+                    Day 2
+                </div>
+
+                <div>
+
+                    <h3>
+                        North Goa
+                    </h3>
+
+                    <p>
+                        Explore the popular beaches and
+                        attractions of North Goa including
+                        Fort Aguada, Calangute, Baga and Anjuna.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="day">
+
+                <div class="day-number">
+                    Day 3
+                </div>
+
+                <div>
+
+                    <h3>
+                        South Goa
+                    </h3>
+
+                    <p>
+                        Discover the peaceful side of Goa with
+                        South Goa beaches, scenic locations and
+                        local sightseeing.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="day">
+
+                <div class="day-number">
+                    Day 4
+                </div>
+
+                <div>
+
+                    <h3>
+                        Departure
+                    </h3>
+
+                    <p>
+                        Enjoy breakfast at the hotel, check out
+                        and proceed for your departure with
+                        wonderful Goa memories.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PACKAGE DETAILS
+========================================================= -->
+
+<section class="section package">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="section-label">
+                YOUR HOLIDAY
+            </div>
+
+            <h2>
+                Package Details
+            </h2>
+
+            <p>
+                Package inclusions can be customised according
+                to your travel requirements.
+            </p>
+
+        </div>
+
+
+        <div class="package-grid">
+
+
+            <div class="package-box">
+
+                <h3>
+                    What's Included
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ✓ Hotel accommodation
+                    </li>
+
+                    <li>
+                        ✓ Daily breakfast
+                    </li>
+
+                    <li>
+                        ✓ Airport / railway station transfers
+                    </li>
+
+                    <li>
+                        ✓ Local sightseeing as per itinerary
+                    </li>
+
+                    <li>
+                        ✓ Private or shared transportation
+                    </li>
+
+                    <li>
+                        ✓ Driver and vehicle charges
+                    </li>
+
+                    <li>
+                        ✓ Trip planning assistance
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="package-box">
+
+                <h3>
+                    What's Not Included
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ✕ Flights or train tickets
+                    </li>
+
+                    <li>
+                        ✕ Personal expenses
+                    </li>
+
+                    <li>
+                        ✕ Optional activities
+                    </li>
+
+                    <li>
+                        ✕ Entry tickets to attractions
+                    </li>
+
+                    <li>
+                        ✕ Lunch and dinner unless specified
+                    </li>
+
+                    <li>
+                        ✕ Travel insurance
+                    </li>
+
+                    <li>
+                        ✕ Anything not mentioned in inclusions
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Explore Goa?
+    </h2>
+
+    <p>
+        Tell us your preferred dates, number of travellers
+        and travel style. Our team can customise your
+        holiday specifically for you.
+    </p>
+
+
+    <div class="cta-buttons">
+
+        <a
+            href="https://wa.me/919710933954?text=Hello%20Vimana%2C%20I%20want%20to%20plan%20a%20trip%20to%20Goa"
+            target="_blank"
+            class="btn btn-green">
+
+            💬 WHATSAPP US
+
+        </a>
+
+
+        <a
+            href="index.html#contact"
+            class="btn btn-orange">
+
+            ENQUIRE NOW
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-brand">
+        VIMANA ✈
+    </div>
+
+    <p>
+        Creating unforgettable journeys across India
+        and around the world.
+    </p>
+
+    <p>
+        Bangalore, Karnataka, India
+    </p>
+
+    <div class="copyright">
+        © 2026 Vimana International Tours & Travels.
+        All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK HOME
+========================================================= -->
+
+<a
+    href="index.html"
+    class="back-home">
+
+    ← BACK TO HOME
+
+</a>
+
+
+<!-- =========================================================
+     FLOATING WHATSAPP
+========================================================= -->
+
+<a
+    href="https://wa.me/919710933954?text=Hello%20Vimana%2C%20I%20want%20to%20plan%20a%20trip%20to%20Goa"
+    target="_blank"
+    class="floating-whatsapp">
+
+    💬
+
+</a>
+
+
+</body>
+
+</html>
 
